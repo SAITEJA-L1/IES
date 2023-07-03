@@ -1,0 +1,12 @@
+import random
+
+def roll_dice():
+    min_val,max_val = 1,6
+    return random.randint(min_val,max_val)
+print("Welcome To Roll A dice ")
+while(1):
+    print("Value on dice : ",roll_dice())
+    v = input("Type 'yes' or 'y' to roll the dice again.")
+    if(v.lower() not in ["yes",'y']):
+        print("Thank you for playing!!!")
+        break
